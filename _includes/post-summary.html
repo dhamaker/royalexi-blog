@@ -1,0 +1,10 @@
+<article class="summary">
+  <a href="{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.description }}</p>
+    <p>
+      <span class="published">{{ post.date | date: "%B %d, %Y"}}</span>
+      <span class="category">{{ post.categories }}</span>
+    </p>
+  </a>
+</article>

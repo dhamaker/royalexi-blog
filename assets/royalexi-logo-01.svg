@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="47px" viewBox="0 0 87 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="BodoniSvtyTwoOSITCTT-Book, Bodoni 72 Oldstyle" font-size="20" font-weight="normal" fill="#8C8686">
+            <tspan x="0.87" y="35">ROYALE</tspan>
+        </text>
+        <filter x="-2.7%" y="-8.3%" width="109.5%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="royalexi.com" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="royalexi-logo" transform="translate(6.000000, -6.000000)">
+            <g id="logo-01">
+                <text id="XI" stroke="#565454" opacity="0.2328125" font-family="BodoniSvtyTwoOSITCTT-Book, Bodoni 72 Oldstyle" font-size="48" font-weight="normal" fill="#B1ADAD">
+                    <tspan x="15.464" y="45">XI</tspan>
+                </text>
+                <g id="ROYALE" stroke="#0C0D0D">
+                    <use fill="#8C8686" fill-opacity="1" stroke-opacity="1" filter="url(#filter-2)" xlink:href="#text-1"></use>
+                    <use fill="#8C8686" fill-opacity="1" stroke-opacity="1" xlink:href="#text-1"></use>
+                    <use xlink:href="#text-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
