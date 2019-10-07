@@ -1,0 +1,10 @@
+<nav>
+  <h2>More Episodes</h2>
+
+  {% assign episodes = site.bbl | where: "layout", "post"%}
+  <ul>
+    {% for item in episodes %}
+      <li><a href="{{item.url}}">{{item.title}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

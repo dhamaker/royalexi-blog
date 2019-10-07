@@ -1,10 +1,24 @@
 {% include header.html %}
-  <main>
-    <h1>Latest</h1>
-    {% for post in site.posts %}
-      {% include post-summary.html %}
-    {% endfor %}
-  </main>
+    <main>
+      <h1></h1>
+      {% for post in site.posts |  reverse:date | limit:4 %}
+        <article class="summary">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.description }}</p>
+            <p>
+              <span class="published">{{ post.date | date: "%B %d, %Y"}}</span>
+              <span class="category">{{ post.categories }}</span>
+            </p>
+        </article>
+      {% endfor %}
+
+      <h2>Browning Block Life</h2>
+      {% for post in site.bbl |  reverse:date | limit:4 %}
+        <article class="summary">
+          <h2><a href="{{post.url}}">{{post.title | remove: "Browning Block Life - "}}</a></h2>
+        </article>
+      {% endfor %}
+    </main>
 <!--
     <section>
       {% for category in site.categories %}

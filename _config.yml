@@ -1,1 +1,4 @@
 title: ROYALE XI
+collections:
+  bbl:
+    output: true

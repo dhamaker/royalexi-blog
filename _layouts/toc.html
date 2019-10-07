@@ -1,0 +1,20 @@
+{% include header.html %}
+  <main>
+    <article>
+      <header>
+          <h1>{{page.title | capitalize }}</h1>
+      </header>
+
+      {{content}}
+
+      <h2>More</h2>
+      <ul>
+      {% assign my_posts = site.posts | where: "categories", page.title %}
+      {% for post in my_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> <span>{{post.date | date: "%B %d, %Y"}}</span></li>
+      {% endfor %}
+      </ul>
+    </article>
+  </main>
+{% include main-nav.html %}
+{% include footer.html %}

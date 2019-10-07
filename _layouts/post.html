@@ -1,62 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{page.title}} | {{site.title}}</title>
-    <style media="screen">
-      body {
-        font-size:calc(1rem + .5vw);
-        font-family: Georgia, Times Roman, serif;
-        color:#333;
-        background:#f8f8f8;
-        margin:0 6vw;
-      }
-      header {
-      }
-      footer {
-        padding:2em 0;
-        color:#666;
-      }
-      p::first-letter{
-        font-size:2.5em;
-        color:#999;
-        vertical-align: baseline;
-      }
-      #siteId {
-        padding-bottom:.5em;
-        border-bottom:1px dotted #ccc;
-        margin:1em auto;
-        display:block;
-        width:16vw;
-        min-width:6em;
-      }
-      #branding{
-        font-family:serif;
-      }
-      video {
-        display:block;
-        margin-top:2em;
-        width:100%;
-
-      }
-    </style>
-  </head>
-  <body>
+{% include header.html %}
+<main>
+  <article class="">
     <header>
-      <img src="/assets/royalexi-logo-01.png" alt="royalXI" id="siteId">
+        <h1>{{page.title}}</h1>
+        <p>Categories: {{ page.categories | capitalize | join : ', ' }}</p>
     </header>
-    <main>
-      <article class="">
-        <header>
-            <h1>{{page.title}}</h1>
-        </header>
-        {{content}}
-
-      </article>
-    </main>
-    <footer>
-      <p>&copy;2018 royalexi.com</p>
-    </footer>
-  </body>
-</html>
+    {{content}}
+    {% if page.collection == "bbl" %}
+      {% include pagination.html %}
+    {% endif %}
+  </article>
+</main>
+{% include main-nav.html %}
+{% include footer.html %}
