@@ -1,6 +1,6 @@
 <nav aria-label="pagination">
-  {% capture previous %}series-{{page.series}}-{{page.episode | minus: 1}}.html{% endcapture %}
-  {% capture next %}series-{{page.series}}-{{page.episode | plus: 1}}.html{% endcapture %}
+  {% capture previous %}series-{{page.season}}-{{page.episode | minus: 1}}.html{% endcapture %}
+  {% capture next %}series-{{page.season}}-{{page.episode | plus: 1}}.html{% endcapture %}
   {% if page.episode == 1 %}
     <a>Previous</a>
   {% else %}
