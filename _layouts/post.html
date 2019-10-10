@@ -2,8 +2,9 @@
 <main>
   <article class="">
     <header>
+        <p class="section"><a href="/">Home</a> > {% if page.collection == "bbl" %} <a href="/bbl">BBL</a> > {% endif %}{{page.name}}</p>
         <h1>{{page.title}}</h1>
-        <p>Categories: {{ page.categories | capitalize | join : ', ' }}</p>
+        <!-- <p>Categories: {{ page.categories | capitalize | join : ', ' }}</p> -->
     </header>
     {{content}}
     {% if page.collection == "bbl" %}
@@ -11,5 +12,4 @@
     {% endif %}
   </article>
 </main>
-{% include main-nav.html %}
 {% include footer.html %}

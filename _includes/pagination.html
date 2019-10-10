@@ -1,10 +1,11 @@
-<nav>
-  <h2>More Episodes</h2>
-
-  {% assign episodes = site.bbl | where: "layout", "post"%}
-  <ul>
-    {% for item in episodes %}
-      <li><a href="{{item.url}}">{{item.title}}</a></li>
-    {% endfor %}
-  </ul>
+<nav aria-label="pagination">
+  {% capture previous %}series-{{page.series}}-{{page.episode | minus: 1}}.html{% endcapture %}
+  {% capture next %}series-{{page.series}}-{{page.episode | plus: 1}}.html{% endcapture %}
+  {% if page.episode == 1 %}
+    <a>Previous</a>
+  {% else %}
+    <a href="{{previous}}" rel="previous">Previous</a>
+  {% endif %}
+  <a href="/bbl">Contents</a>
+  <a href="{{next}}" rel="next">Next</a>
 </nav>

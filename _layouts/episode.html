@@ -1,0 +1,16 @@
+{% include header.html %}
+<main>
+  <article class="">
+    <header>
+        <p class="section"><a href="/">Home</a> > {% if page.collection == "bbl" %} <a href="/bbl">BBL</a> > {% endif %}{{page.name}}</p>
+        <h1>{{page.title}}</h1>
+        <p>Season {{page.season}} Episode {{page.episode}}</p>
+        <!-- <p>Categories: {{ page.categories | capitalize | join : ', ' }}</p> -->
+    </header>
+    {{content}}
+    {% if page.collection == "bbl" %}
+      {% include pagination.html %}
+    {% endif %}
+  </article>
+</main>
+{% include footer.html %}

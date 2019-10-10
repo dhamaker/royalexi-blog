@@ -3,9 +3,10 @@ layout: toc
 title : Browning Block Life
 
 ---
-Size: {{site.bbl.size}}
-{% assign episodes = site.bbl | where: "layout", "post" %}
-
-{% for post in episodes %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% assign episodes = site.bbl | where: "layout", "episode" %}
+<ul class="posts">
+{% for post in episodes | reverse : "episode" %}
+<li class=""><a href="{{ post.url }}">{{ post.title }}</a> Season {{post.season}} Episode {{post.episode}}.  Duration {{post.duration}}
+</li>
 {% endfor %}
+</ul>

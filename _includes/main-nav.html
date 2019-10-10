@@ -1,10 +1,11 @@
 <nav>
-  <h2>Menu</h2>
+  <h2>Site Map</h2>
   <a href="/">Home</a>
 <!--      <a href="#">Lego Movies</a>
   <a href="#">Calathumpian</a>
-  <a href="#">Other...</a>-->
+  <a href="#">Other...</a>
   {% for category in site.categories %}
     <a href="/{{category[0]}}.html">{{category[0] | capitalize}}</a>
   {% endfor %}
+-->
 </nav>

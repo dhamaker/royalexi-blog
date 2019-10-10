@@ -1,15 +1,15 @@
 ---
-layout: post
-title: Browning Block Life - Series 1 Episode 5
+title: Fire Station a ball of laughter
 date: 2019-09-06
 description:
 collection: bbl
-series: 1
+season: 1
 episode: 5
+duration: "1:16"
 categories: video
 tags: bbl
 ---
-<p class="duration">Duration: 1:16</p>
-<video src="/assets/bbl-series-1-5.mp4" controls>
+<p class="duration">Duration: {{page.duration}}</p>
+<video src="{{page.host}}bbl-series-1-5.mp4" controls>
   Your browser does not support video. Try a current browser version if you available.
 </video>

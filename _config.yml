@@ -2,3 +2,19 @@ title: ROYALE XI
 collections:
   bbl:
     output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      name: "News"
+  -
+    scope:
+      path: ""
+      type: "bbl"
+    values:
+      layout: "episode"
+      name: "Browning Block Life"
+      host: "http://users.lmi.net/dhamaker/4tg/"
