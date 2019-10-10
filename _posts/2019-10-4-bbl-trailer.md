@@ -8,7 +8,7 @@ collection: bbl
 categories: video
 duration: "0:40"
 ---
-In this follow up to Lego Attack the Block, the people of South London move to Shefield to escape the aliens and discover  browning has leaked into everyone's lives.
+In this follow up to Lego Attack the Block, the people of South London move to Shefield to escape the aliens and discover  browning has leaked into everyone's lives. <a href="/bbl/">Season 1</a>
 
 <h2>The Trailer</h2>
 <p class="duration">Duration: {{page.duration}}</p>
