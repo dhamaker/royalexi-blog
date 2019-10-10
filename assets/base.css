@@ -103,6 +103,7 @@ h1 {
 
 video {
   width:100%;
+  max-width:650px;
 }
 
 [aria-label="pagination"] {
