@@ -4,10 +4,12 @@
     <header>
         <p class="section"><a href="/">Home</a> > {% if page.collection == "bbl" %} <a href="/bbl">BBL</a> > {% endif %}{{page.name}}</p>
         <h1>{{page.title}}</h1>
-        <p>Season {{page.season}} Episode {{page.episode}}</p>
+        <p>Season {{page.season}} Episode {{page.episode}}.  Duration: {{page.duration}}</p>
         <!-- <p>Categories: {{ page.categories | capitalize | join : ', ' }}</p> -->
     </header>
-    {{content}}
+    <video src="{{page.host}}{{page.file}}" controls>
+      Your browser does not support video. Try a current browser version if you available.
+    </video>
     {% if page.collection == "bbl" %}
       {% include pagination.html %}
     {% endif %}

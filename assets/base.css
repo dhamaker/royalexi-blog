@@ -26,12 +26,6 @@
     color:#666;
   }
 
- article > p:first-of-type::first-letter{
-    /*font-size:2.5em;
-    color:#666;
-    vertical-align: baseline;
-    */
-  }
   #siteId {
     padding-bottom:.5em;
   /*  border-bottom:1px dotted #ccc; */
@@ -62,10 +56,24 @@
     */
   }
 
+  article > p:first-of-type::first-letter{
+    /*font-size:2.5em;
+    color:#666;
+    vertical-align: baseline;
+    */
+  }
+
+  article > header p{
+    margin-top:-1.25em;
+    font-size:.875em;
+    font-style:italic;
+  }
+
 h1 {
   /*    flex:0 1 100% */
   font-size:1.5em;
   font-weight:normal;
+  margin-top:1.5em;
 }
   article.summary {
 /*    flex:1 1 30%;
@@ -109,10 +117,14 @@ video {
 [aria-label="pagination"] {
   padding:1em 0;
 }
+[aria-label="pagination"] a {
+  margin-right:.75em;
+}
 
 .pagination .current {
   font-weight:bold;
 }
+
 
 .toc .posts li {
   font-size:.875em;
