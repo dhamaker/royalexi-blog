@@ -1,12 +1,20 @@
 ---
 layout: toc
-title : Browning Block Life
+title : Browning Block Life - The Series
 
 ---
+Seasons 1 through 3
 {% assign episodes = site.bbl | where: "layout", "episode" %}
-<ul class="posts">
+
+
+<ul class="episodes">
 {% for post in episodes | reverse : "episode" %}
-<li class=""><a href="{{ post.url }}">{{ post.title }}</a> Season {{post.season}} Episode {{post.episode}}.  Duration {{post.duration}}
-</li>
+  <li>
+    <a href="{{ post.url }}">
+      <img src="/assets/bbl/bbl-thumb-{{post.season}}-{{post.episode}}.jpg" class="thumbnail">
+      <span>{{ post.title }}</span>
+    </a>
+    <p>Season {{post.season}} - Episode {{post.episode}} | {{post.duration}} min</p>
+  </li>
 {% endfor %}
 </ul>

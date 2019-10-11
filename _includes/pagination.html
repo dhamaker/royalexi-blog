@@ -7,5 +7,10 @@
     <a href="{{previous}}" rel="previous">Previous</a>
   {% endif %}
   <a href="/bbl">Contents</a>
-  <a href="{{next}}" rel="next">Next</a>
+
+  {% if page.episode == 6 %}
+    <a>Next</a>
+  {% else %}
+    <a href="{{next}}" rel="next">Next</a>
+  {% endif %}
 </nav>

@@ -1,6 +1,6 @@
 ---
 title: Policeman finds a book that keeps him awake
-date: 2019-09-06
+date: 2019-10-10
 description:
 collection: bbl
 season: 1
