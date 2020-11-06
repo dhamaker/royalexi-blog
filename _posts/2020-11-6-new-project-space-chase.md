@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New project Space Chase
+title: New adventures of Space Chase
 date: 2020-11-6
 published: true
 description: A new adventure is coming to life!
