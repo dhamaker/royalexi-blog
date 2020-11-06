@@ -6,5 +6,5 @@ published: true
 description: A new adventure is coming to life!
 ---
 
-Out of the depths of COVID-19 lockdowns comes new adventures for the cast of Browning Block Life.
+Out of the depths of the COVID-19 lockdown comes new adventures for the cast of Browning Block Life.
 
