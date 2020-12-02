@@ -8,9 +8,8 @@
     background:rgb(255,255,255);
     background:rgb(241,162,217);
     background:rgb(248,215,239);
-    background:rgb(255, 240, 254);
-    background:
-    margin:0 6vw;
+    background:rgb(255, 240, 254)
+    margin: 0 6vw;
   }
   header {
   }
@@ -177,7 +176,7 @@ video {
 
 .summary  {
    margin:1em 0;
-   padding:.25em .5em;
+   padding:.25em 0;
    display:block;
    height:100%;
  }
