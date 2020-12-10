@@ -53,7 +53,7 @@
     background: #f1f1f1;
     border-radius: 4px;
     border: 1px dotted #ccc;
-    box-shadow: rgb(241,162,217) 6px 6px 6px
+    box-shadow: rgb(241,162,217) 0px 0px 6px
   }
   .home iframe {
     width:100% !important;
