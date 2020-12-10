@@ -1,5 +1,6 @@
 {% include header.html %}
     <main>
+      <section>  
       <h1>Studio News</h1>
       {% for post in site.posts |  reverse:date | limit:4 %}
         <article class="summary">
@@ -11,7 +12,7 @@
             </p>
         </article>
       {% endfor %}
-
+        </section>
       <!--
       <h2>Browning Block Life</h2>
       {% for post in site.bbl |  reverse:date | limit:4 %}
@@ -19,7 +20,7 @@
           <h2><a href="{{post.url}}">{{post.title | remove: "Browning Block Life - "}}</a></h2>
         </article>
       {% endfor %}
-    </main>
+ 
     <section>
       {% for category in site.categories %}
       <h2>{{ category[0] | capitalize }}</h2>
@@ -33,12 +34,13 @@
     </section>
 
 -->
-    <aside class="">
+    <aside>
       <h2>Elsewhere...</h2>
       <p>Watch these a-MA-zing talents.</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/LQgNLvFRaog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>Listen to Callithumpian.</p>
       <iframe width="100%" height="auto" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153322693&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
       <iframe width="100%" height="auto" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/357600059&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
-  </aside>
+    </aside>
+ </main>       
 {% include footer.html %}
