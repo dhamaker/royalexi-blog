@@ -29,9 +29,9 @@
   #siteId {
     padding-bottom:.5em;
   /*  border-bottom:1px dotted #ccc; */
-    margin:1em auto;
+    margin:3rem 0 1rem 0;
     display:block;
-    width:16vw;
+    width:12rem;
     min-width:6em;
   }
   #branding{
