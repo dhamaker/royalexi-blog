@@ -52,7 +52,7 @@
     padding:0 2em;
     background: #f1f1f1;
     border-radius: 16px;
-    /*border: 1px dotted #ccc;*/
+    border: 1px dotted #ccc;
     box-shadow: rgb(241,162,217) 0px 0px 24px
   }
   .home iframe {
